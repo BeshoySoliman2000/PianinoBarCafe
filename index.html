@@ -307,12 +307,13 @@
 
   <!-- Simple Mobile Menu Toggle Script -->
   <script>
-    const toggle = document.querySelector('.menu-toggle');
-    const sidebar = document.querySelector('.sidebar');
-    toggle.addEventListener('click', () => {
-      sidebar.classList.toggle('open');
-    });
-  </script>
+  const toggle = document.querySelector('.menu-toggle');
+  const sidebar = document.querySelector('.sidebar');
+  toggle.addEventListener('click', () => {
+    sidebar.classList.toggle('open');
+    document.body.classList.toggle('menu-open');
+  });
+</script>
   <style>
     /* Mobile menu open state */
     .sidebar.open {

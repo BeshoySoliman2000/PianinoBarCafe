@@ -41,7 +41,7 @@ a {
   background: linear-gradient(180deg, #121212, #0d0d0d);
   border-right: 1px solid #252525;
   z-index: 100;
-  transition: width 0.3s ease, padding 0.3s ease; /* added for smooth mobile toggle */
+  transition: width 0.3s ease, padding 0.3s ease;
 }
 
 .brand {
@@ -128,7 +128,8 @@ nav a:first-letter {
 .main-content {
   margin-left: 225px;
   min-height: 100vh;
-  overflow: hidden;
+  overflow: visible; /* changed from hidden to avoid clipping */
+  transition: margin-left 0.3s ease;
 }
 
 .topbar {
@@ -171,7 +172,7 @@ nav a:first-letter {
   align-items: center;
   background:
     linear-gradient(90deg, rgba(0,0,0,.94) 0%, rgba(0,0,0,.76) 38%, rgba(0,0,0,.12) 100%),
-    url("./photo-1511081692775-05d0f180a065.avif") /* local image */
+    url("./photo-1511081692775-05d0f180a065.avif") center/cover;
 }
 
 .hero-content {
@@ -254,7 +255,7 @@ nav a:first-letter {
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr); /* now 7 categories */
+  grid-template-columns: repeat(7, 1fr);
   gap: 10px;
 }
 
@@ -301,7 +302,7 @@ nav a:first-letter {
 .cocktail-image { background-image: url("./photo-1513558161293-cdaf765ed2fd.avif"); }
 .mocktail-image { background-image: url("./photo-1556679343-c7306c1976bc.avif"); }
 .beer-image { background-image: url("./photo-1515003197210-e0cd71810b5f.avif"); }
-.shisha-image { background-image: url("./Gemini_Generated_Image_2etjj12etjj12etj_480x480-1.webp"); } /* new */
+.shisha-image { background-image: url("./Gemini_Generated_Image_2etjj12etjj12etj_480x480-1.webp"); }
 
 .signature-grid {
   display: grid;
@@ -446,29 +447,12 @@ nav a:first-letter {
 }
 
 /* --- Snack & Dessert Images (Local) --- */
-.nachos-image {
-  background-image: url("./photo-1513456852971-30c0b8199d4d.avif");
-}
-
-.fries-image {
-  background-image: url("./photo-1573080496219-bb080dd4f877.avif");
-}
-
-.nuts-image {
-  background-image: url("./nuts-228044_1280.jpg");
-}
-
-.cheesecake-image {
-  background-image: url("./photo-1565958011703-44f9829ba187.avif");
-}
-
-.cake-image {
-  background-image: url("./photo-1578985545062-69928b1d9587.avif");
-}
-
-.tiramisu-image {
-  background-image: url("./photo-1571877227200-a0d98ea607e9.avif");
-}
+.nachos-image { background-image: url("./photo-1513456852971-30c0b8199d4d.avif"); }
+.fries-image { background-image: url("./photo-1573080496219-bb080dd4f877.avif"); }
+.nuts-image { background-image: url("./nuts-228044_1280.jpg"); }
+.cheesecake-image { background-image: url("./photo-1565958011703-44f9829ba187.avif"); }
+.cake-image { background-image: url("./photo-1578985545062-69928b1d9587.avif"); }
+.tiramisu-image { background-image: url("./photo-1571877227200-a0d98ea607e9.avif"); }
 
 footer {
   padding: 55px 42px 25px;
@@ -535,6 +519,7 @@ footer {
     padding: 0;
     overflow: hidden;
     border: 0;
+    transition: width 0.3s ease, padding 0.3s ease;
   }
   .sidebar.open {
     width: 225px;
@@ -542,7 +527,13 @@ footer {
     overflow: auto;
     border-right: 1px solid #252525;
   }
-  .main-content { margin-left: 0; }
+  .main-content {
+    margin-left: 0;
+    transition: margin-left 0.3s ease;
+  }
+  body.menu-open .main-content {
+    margin-left: 225px;
+  }
   .topbar {
     height: 65px;
     padding: 0 20px;
