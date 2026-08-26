@@ -168,7 +168,7 @@ nav a:first-letter {
   align-items: center;
   background:
     linear-gradient(90deg, rgba(0,0,0,.94) 0%, rgba(0,0,0,.76) 38%, rgba(0,0,0,.12) 100%),
-    url("https://images.unsplash.com/photo-1511081692775-05d0f180a065?auto=format&fit=crop&w=1800&q=85")
+    url("./photo-1511081692775-05d0f180a065.avif")
     center/cover;
 }
 
@@ -293,27 +293,27 @@ nav a:first-letter {
 }
 
 .coffee-image {
-  background-image: url("https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&w=600&q=80");
+  background-image: url("./photo-1495474472287-4d71bcdd2085.avif");
 }
 
 .tea-image {
-  background-image: url("https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=600&q=80");
+  background-image: url("./photo-1544787219-7f47ccb76574.avif");
 }
 
 .cold-image {
-  background-image: url("https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=600&q=80");
+  background-image: url("./photo-1551024709-8f23befc6f87.avif");
 }
 
 .cocktail-image {
-  background-image: url("https://images.unsplash.com/photo-1513558161293-cdaf765ed2fd?auto=format&fit=crop&w=600&q=80");
+  background-image: url("./photo-1513558161293-cdaf765ed2fd.avif");
 }
 
 .mocktail-image {
-  background-image: url("https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&w=600&q=80");
+  background-image: url("./photo-1556679343-c7306c1976bc.avif");
 }
 
 .beer-image {
-  background-image: url("https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=600&q=80");
+  background-image: url("./photo-1515003197210-e0cd71810b5f.avif");
 }
 
 .signature-grid {
@@ -339,19 +339,19 @@ nav a:first-letter {
 }
 
 .espresso-image {
-  background-image: url("https://images.unsplash.com/photo-1510591509098-f4fdc6d0ff04?auto=format&fit=crop&w=700&q=80");
+  background-image: url("./photo-1510591509098-f4fdc6d0ff04.avif");
 }
 
 .mojito-image {
-  background-image: url("https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=700&q=80");
+  background-image: url("./photo-1551538827-9c037cb4f32a.avif");
 }
 
 .aperol-image {
-  background-image: url("https://images.unsplash.com/photo-1551538827-9c037cb4f32a?auto=format&fit=crop&w=700&q=80");
+  background-image: url("./photo-1551538827-9c037cb4f32a.avif");
 }
 
 .frappe-image {
-  background-image: url("https://images.unsplash.com/photo-1572490122747-3968b75cc699?auto=format&fit=crop&w=700&q=80");
+  background-image: url("./photo-1572490122747-3968b75cc699.avif");
 }
 
 .drink-info {
@@ -469,27 +469,27 @@ nav a:first-letter {
 }
 
 .nachos-image {
-  background-image: url("https://images.unsplash.com/photo-1513456852971-30c0b8199d4d?auto=format&fit=crop&w=800&q=80");
+  background-image: url("./photo-1513456852971-30c0b8199d4d.avif");
 }
 
 .fries-image {
-  background-image: url("https://images.unsplash.com/photo-1573080496219-bb080dd4f877?auto=format&fit=crop&w=800&q=80");
+  background-image: url("./photo-1573080496219-bb080dd4f877.avif");
 }
 
 .nuts-image {
-  background-image: url("https://images.unsplash.com/photo-1536591375738-16e06f7d8c0f?auto=format&fit=crop&w=800&q=80");
+  background-image: url("./nuts-228044_1280.jpg");
 }
 
 .cheesecake-image {
-  background-image: url("https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=800&q=80");
+  background-image: url("./photo-1565958011703-44f9829ba187.avif");
 }
 
 .cake-image {
-  background-image: url("https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=800&q=80");
+  background-image: url("./photo-1578985545062-69928b1d9587.avif");
 }
 
 .tiramisu-image {
-  background-image: url("https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&w=800&q=80");
+  background-image: url("./photo-1571877227200-a0d98ea607e9.avif");
 }
 
 footer {
