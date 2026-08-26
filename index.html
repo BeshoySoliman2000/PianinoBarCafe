@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Pianino Bar Cafe digital menu">
+  <meta name="description" content="Pianino Bar Cafe digital menu - Ljubljana">
   <title>Pianino Bar Cafe | Digital Menu</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
-</head>
 
+  </style>
+</head>
 <body>
   <aside class="sidebar">
     <div class="brand">
@@ -21,12 +22,12 @@
 
     <nav>
       <a class="active" href="#home">⌂ <span>Home</span></a>
-      <a href="#coffee">☕ <span>Coffee</span></a>
-      <a href="#tea">🍃 <span>Tea</span></a>
+      <a href="#coffee">☕ <span>Coffee & Tea</span></a>
       <a href="#cold-drinks">🥤 <span>Cold Drinks</span></a>
       <a href="#cocktails">🍸 <span>Cocktails</span></a>
       <a href="#mocktails">🍹 <span>Mocktails</span></a>
       <a href="#beers">🍺 <span>Beers</span></a>
+      <a href="#shisha">💨 <span>Shisha</span></a>
       <a href="#snacks">🍟 <span>Snacks</span></a>
       <a href="#desserts">🍰 <span>Desserts</span></a>
     </nav>
@@ -34,7 +35,7 @@
     <div class="wifi-box">
       <div class="wifi-icon">⌁</div>
       <strong>FREE WI-FI</strong>
-      <span>BarCafe_Free</span>
+      <span>Pianino_Free</span>
       <span>Enjoy your time!</span>
     </div>
   </aside>
@@ -42,7 +43,7 @@
   <main class="main-content" id="home">
     <header class="topbar">
       <div>
-        <span class="location">⌖ Pianino Bar Cafe</span>
+        <span class="location">⌖ Pianino Bar Cafe, Zaloška cesta 56, Ljubljana</span>
         <small>Open Daily 12:00 PM - 01:00 AM</small>
       </div>
       <button class="menu-toggle" aria-label="Open menu">☰</button>
@@ -55,7 +56,7 @@
         <h2>Pianino Bar Cafe</h2>
         <div class="gold-line"></div>
         <p class="hero-text">
-          Relax, enjoy and taste our carefully crafted drinks and snacks.
+          Relax, enjoy and taste our carefully crafted drinks, snacks, and shisha.
         </p>
         <a class="button" href="#categories">SEE OUR MENU</a>
       </div>
@@ -71,11 +72,7 @@
       <div class="category-grid">
         <a href="#coffee" class="category-card">
           <div class="category-image coffee-image"></div>
-          <h3>COFFEE</h3>
-        </a>
-        <a href="#tea" class="category-card">
-          <div class="category-image tea-image"></div>
-          <h3>TEA</h3>
+          <h3>COFFEE & TEA</h3>
         </a>
         <a href="#cold-drinks" class="category-card">
           <div class="category-image cold-image"></div>
@@ -93,6 +90,14 @@
           <div class="category-image beer-image"></div>
           <h3>BEERS</h3>
         </a>
+        <a href="#shisha" class="category-card">
+          <div class="category-image shisha-image"></div>
+          <h3>SHISHA</h3>
+        </a>
+        <a href="#snacks" class="category-card">
+          <div class="category-image nachos-image"></div>
+          <h3>SNACKS</h3>
+        </a>
       </div>
     </section>
 
@@ -108,17 +113,17 @@
           <div class="drink-image espresso-image"></div>
           <div class="drink-info">
             <h3>ESPRESSO MARTINI</h3>
-            <strong>€7.50</strong>
+            <strong>€8.00</strong>
             <p>Vodka, espresso, coffee liqueur, simple syrup.</p>
             <small>POPULAR</small>
           </div>
         </article>
 
-        <article class="drink-card" id="cocktails">
+        <article class="drink-card">
           <div class="drink-image mojito-image"></div>
           <div class="drink-info">
             <h3>MOJITO</h3>
-            <strong>€6.90</strong>
+            <strong>€7.50</strong>
             <p>White rum, lime, mint, sugar, soda water.</p>
           </div>
         </article>
@@ -127,7 +132,7 @@
           <div class="drink-image aperol-image"></div>
           <div class="drink-info">
             <h3>APEROL SPRITZ</h3>
-            <strong>€6.90</strong>
+            <strong>€7.50</strong>
             <p>Aperol, prosecco, soda water, orange slice.</p>
           </div>
         </article>
@@ -136,57 +141,100 @@
           <div class="drink-image frappe-image"></div>
           <div class="drink-info">
             <h3>CARAMEL FRAPPÉ</h3>
-            <strong>€5.50</strong>
+            <strong>€6.00</strong>
             <p>Coffee, milk, caramel syrup, ice, whipped cream.</p>
           </div>
         </article>
       </div>
     </section>
 
-    <section class="section simple-menu" id="tea">
+    <section class="section simple-menu" id="coffee-tea">
       <div class="section-heading left-heading">
         <h2>COFFEE & TEA</h2>
       </div>
       <div class="menu-list">
-        <div><span>Espresso</span><strong>€2.20</strong></div>
-        <div><span>Double Espresso</span><strong>€3.20</strong></div>
-        <div><span>Cappuccino</span><strong>€3.20</strong></div>
-        <div><span>Café Latte</span><strong>€3.50</strong></div>
-        <div><span>Flat White</span><strong>€3.40</strong></div>
-        <div><span>Hot Chocolate</span><strong>€3.50</strong></div>
-        <div><span>Black Tea</span><strong>€2.50</strong></div>
-        <div><span>Green Tea</span><strong>€2.50</strong></div>
-        <div><span>Fresh Mint Tea</span><strong>€3.00</strong></div>
+        <div><span>Espresso</span><strong>€2.50</strong></div>
+        <div><span>Double Espresso</span><strong>€3.50</strong></div>
+        <div><span>Cappuccino</span><strong>€3.50</strong></div>
+        <div><span>Café Latte</span><strong>€3.80</strong></div>
+        <div><span>Flat White</span><strong>€3.70</strong></div>
+        <div><span>Hot Chocolate</span><strong>€3.80</strong></div>
+        <div><span>Black Tea</span><strong>€2.80</strong></div>
+        <div><span>Green Tea</span><strong>€2.80</strong></div>
+        <div><span>Fresh Mint Tea</span><strong>€3.30</strong></div>
       </div>
     </section>
 
     <section class="section simple-menu" id="cold-drinks">
       <div class="section-heading left-heading">
-        <h2>COLD DRINKS & MOCKTAILS</h2>
+        <h2>COLD DRINKS & JUICES</h2>
       </div>
       <div class="menu-list">
-        <div><span>Fresh Orange Juice</span><strong>€4.00</strong></div>
-        <div><span>Fresh Lemonade</span><strong>€3.80</strong></div>
-        <div><span>Iced Coffee</span><strong>€4.00</strong></div>
-        <div><span>Iced Tea</span><strong>€3.50</strong></div>
-        <div id="mocktails"><span>Virgin Mojito</span><strong>€5.00</strong></div>
-        <div><span>Strawberry Cooler</span><strong>€5.20</strong></div>
-        <div><span>Passion Fruit Fizz</span><strong>€5.20</strong></div>
+        <div><span>Fresh Orange Juice</span><strong>€4.50</strong></div>
+        <div><span>Fresh Lemonade</span><strong>€4.20</strong></div>
+        <div><span>Iced Coffee</span><strong>€4.50</strong></div>
+        <div><span>Iced Tea</span><strong>€3.80</strong></div>
+        <div><span>Apple Juice</span><strong>€3.50</strong></div>
+        <div><span>Sparkling Water</span><strong>€3.00</strong></div>
+        <div><span>Still Water</span><strong>€2.50</strong></div>
+      </div>
+    </section>
+
+    <section class="section simple-menu" id="cocktails">
+      <div class="section-heading left-heading">
+        <h2>COCKTAILS</h2>
+      </div>
+      <div class="menu-list">
+        <div><span>Classic Mojito</span><strong>€7.50</strong></div>
+        <div><span>Aperol Spritz</span><strong>€7.50</strong></div>
+        <div><span>Gin & Tonic</span><strong>€7.50</strong></div>
+        <div><span>Margarita</span><strong>€8.00</strong></div>
+        <div><span>Espresso Martini</span><strong>€8.00</strong></div>
+        <div><span>Whiskey Sour</span><strong>€8.00</strong></div>
+        <div><span>Pina Colada</span><strong>€8.50</strong></div>
+      </div>
+    </section>
+
+    <section class="section simple-menu" id="mocktails">
+      <div class="section-heading left-heading">
+        <h2>MOCKTAILS</h2>
+      </div>
+      <div class="menu-list">
+        <div><span>Virgin Mojito</span><strong>€5.50</strong></div>
+        <div><span>Strawberry Cooler</span><strong>€5.70</strong></div>
+        <div><span>Passion Fruit Fizz</span><strong>€5.70</strong></div>
+        <div><span>Blue Lagoon</span><strong>€5.50</strong></div>
+        <div><span>Shirley Temple</span><strong>€5.00</strong></div>
       </div>
     </section>
 
     <section class="section simple-menu" id="beers">
       <div class="section-heading left-heading">
-        <h2>COCKTAILS & BEERS</h2>
+        <h2>BEERS</h2>
       </div>
       <div class="menu-list">
-        <div><span>Classic Mojito</span><strong>€6.90</strong></div>
-        <div><span>Aperol Spritz</span><strong>€6.90</strong></div>
-        <div><span>Gin & Tonic</span><strong>€7.00</strong></div>
-        <div><span>Margarita</span><strong>€7.50</strong></div>
-        <div><span>Local Lager 0.33L</span><strong>€3.50</strong></div>
-        <div><span>Premium Lager 0.33L</span><strong>€4.00</strong></div>
-        <div><span>Wheat Beer 0.50L</span><strong>€4.80</strong></div>
+        <div><span>Union Radler 0.5L</span><strong>€4.00</strong></div>
+        <div><span>Union Lager 0.5L</span><strong>€4.00</strong></div>
+        <div><span>Laško Lager 0.5L</span><strong>€4.00</strong></div>
+        <div><span>Laško Dark 0.5L</span><strong>€4.20</strong></div>
+        <div><span>Premium Lager 0.33L</span><strong>€4.50</strong></div>
+        <div><span>Wheat Beer 0.5L</span><strong>€5.00</strong></div>
+        <div><span>IPA 0.33L</span><strong>€5.00</strong></div>
+      </div>
+    </section>
+
+    <section class="section simple-menu" id="shisha">
+      <div class="section-heading left-heading">
+        <h2>SHISHA</h2>
+      </div>
+      <div class="menu-list">
+        <div><span>Double Apple</span><strong>€15.00</strong></div>
+        <div><span>Mint</span><strong>€15.00</strong></div>
+        <div><span>Grape Mint</span><strong>€16.00</strong></div>
+        <div><span>Watermelon Mint</span><strong>€16.00</strong></div>
+        <div><span>Peach</span><strong>€15.00</strong></div>
+        <div><span>Blueberry</span><strong>€16.00</strong></div>
+        <div><span>Mixed Fruit</span><strong>€17.00</strong></div>
       </div>
     </section>
 
@@ -200,17 +248,17 @@
         <article class="small-card">
           <div class="small-image nachos-image"></div>
           <h3>Nachos</h3>
-          <strong>€4.90</strong>
+          <strong>€5.50</strong>
         </article>
         <article class="small-card">
           <div class="small-image fries-image"></div>
           <h3>French Fries</h3>
-          <strong>€3.50</strong>
+          <strong>€4.00</strong>
         </article>
         <article class="small-card">
           <div class="small-image nuts-image"></div>
           <h3>Mix Nuts</h3>
-          <strong>€3.90</strong>
+          <strong>€4.50</strong>
         </article>
       </div>
     </section>
@@ -225,17 +273,17 @@
         <article class="small-card">
           <div class="small-image cheesecake-image"></div>
           <h3>Cheesecake</h3>
-          <strong>€4.90</strong>
+          <strong>€5.50</strong>
         </article>
         <article class="small-card">
           <div class="small-image cake-image"></div>
           <h3>Chocolate Cake</h3>
-          <strong>€4.90</strong>
+          <strong>€5.50</strong>
         </article>
         <article class="small-card">
           <div class="small-image tiramisu-image"></div>
           <h3>Tiramisu</h3>
-          <strong>€4.90</strong>
+          <strong>€5.50</strong>
         </article>
       </div>
     </section>
@@ -256,5 +304,23 @@
       <p class="copyright">© 2026 Pianino Bar Cafe. All rights reserved.</p>
     </footer>
   </main>
+
+  <!-- Simple Mobile Menu Toggle Script -->
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const sidebar = document.querySelector('.sidebar');
+    toggle.addEventListener('click', () => {
+      sidebar.classList.toggle('open');
+    });
+  </script>
+  <style>
+    /* Mobile menu open state */
+    .sidebar.open {
+      width: 225px;
+      padding: 28px 20px;
+      overflow: auto;
+      border-right: 1px solid #252525;
+    }
+  </style>
 </body>
 </html>

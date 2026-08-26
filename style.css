@@ -1,3 +1,5 @@
+/* style.css – Pianino Bar Cafe Digital Menu */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -39,6 +41,7 @@ a {
   background: linear-gradient(180deg, #121212, #0d0d0d);
   border-right: 1px solid #252525;
   z-index: 100;
+  transition: width 0.3s ease, padding 0.3s ease; /* added for smooth mobile toggle */
 }
 
 .brand {
@@ -168,8 +171,7 @@ nav a:first-letter {
   align-items: center;
   background:
     linear-gradient(90deg, rgba(0,0,0,.94) 0%, rgba(0,0,0,.76) 38%, rgba(0,0,0,.12) 100%),
-    url("./photo-1511081692775-05d0f180a065.avif")
-    center/cover;
+    url("./photo-1511081692775-05d0f180a065.avif") /* local image */
 }
 
 .hero-content {
@@ -252,7 +254,7 @@ nav a:first-letter {
 
 .category-grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(7, 1fr); /* now 7 categories */
   gap: 10px;
 }
 
@@ -292,29 +294,14 @@ nav a:first-letter {
   background: var(--gold);
 }
 
-.coffee-image {
-  background-image: url("./photo-1495474472287-4d71bcdd2085.avif");
-}
-
-.tea-image {
-  background-image: url("./photo-1544787219-7f47ccb76574.avif");
-}
-
-.cold-image {
-  background-image: url("./photo-1551024709-8f23befc6f87.avif");
-}
-
-.cocktail-image {
-  background-image: url("./photo-1513558161293-cdaf765ed2fd.avif");
-}
-
-.mocktail-image {
-  background-image: url("./photo-1556679343-c7306c1976bc.avif");
-}
-
-.beer-image {
-  background-image: url("./photo-1515003197210-e0cd71810b5f.avif");
-}
+/* --- Category Images (Local) --- */
+.coffee-image { background-image: url("./photo-1495474472287-4d71bcdd2085.avif"); }
+.tea-image { background-image: url("./photo-1544787219-7f47ccb76574.avif"); }
+.cold-image { background-image: url("./photo-1551024709-8f23befc6f87.avif"); }
+.cocktail-image { background-image: url("./photo-1513558161293-cdaf765ed2fd.avif"); }
+.mocktail-image { background-image: url("./photo-1556679343-c7306c1976bc.avif"); }
+.beer-image { background-image: url("./photo-1515003197210-e0cd71810b5f.avif"); }
+.shisha-image { background-image: url("./Gemini_Generated_Image_2etjj12etjj12etj_480x480-1.webp"); } /* new */
 
 .signature-grid {
   display: grid;
@@ -338,21 +325,11 @@ nav a:first-letter {
   background-size: cover;
 }
 
-.espresso-image {
-  background-image: url("./photo-1510591509098-f4fdc6d0ff04.avif");
-}
-
-.mojito-image {
-  background-image: url("./photo-1551538827-9c037cb4f32a.avif");
-}
-
-.aperol-image {
-  background-image: url("./photo-1551538827-9c037cb4f32a.avif");
-}
-
-.frappe-image {
-  background-image: url("./photo-1572490122747-3968b75cc699.avif");
-}
+/* --- Drink Images (Local) --- */
+.espresso-image { background-image: url("./photo-1510591509098-f4fdc6d0ff04.avif"); }
+.mojito-image { background-image: url("./photo-1551538827-9c037cb4f32a.avif"); }
+.aperol-image { background-image: url("./photo-1551538827-9c037cb4f32a.avif"); }
+.frappe-image { background-image: url("./photo-1572490122747-3968b75cc699.avif"); }
 
 .drink-info {
   padding: 17px;
@@ -468,6 +445,7 @@ nav a:first-letter {
   font-size: 13px;
 }
 
+/* --- Snack & Dessert Images (Local) --- */
 .nachos-image {
   background-image: url("./photo-1513456852971-30c0b8199d4d.avif");
 }
@@ -547,13 +525,8 @@ footer {
 
 /* Responsive layout */
 @media (max-width: 1200px) {
-  .category-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  .signature-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .category-grid { grid-template-columns: repeat(4, 1fr); }
+  .signature-grid { grid-template-columns: repeat(2, 1fr); }
 }
 
 @media (max-width: 800px) {
@@ -563,16 +536,17 @@ footer {
     overflow: hidden;
     border: 0;
   }
-
-  .main-content {
-    margin-left: 0;
+  .sidebar.open {
+    width: 225px;
+    padding: 28px 20px;
+    overflow: auto;
+    border-right: 1px solid #252525;
   }
-
+  .main-content { margin-left: 0; }
   .topbar {
     height: 65px;
     padding: 0 20px;
   }
-
   .menu-toggle {
     display: block;
     margin-left: 18px;
@@ -581,40 +555,17 @@ footer {
     color: var(--gold);
     font-size: 25px;
   }
-
   .hero {
     margin: 0 15px;
     min-height: 470px;
   }
-
-  .hero-content {
-    margin: 0 30px;
-  }
-
-  .section {
-    padding: 42px 20px 0;
-  }
-
-  .category-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .signature-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .menu-list {
-    grid-template-columns: 1fr;
-  }
-
-  .small-card-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .thank-you {
-    flex-wrap: wrap;
-  }
-
+  .hero-content { margin: 0 30px; }
+  .section { padding: 42px 20px 0; }
+  .category-grid { grid-template-columns: repeat(2, 1fr); }
+  .signature-grid { grid-template-columns: 1fr; }
+  .menu-list { grid-template-columns: 1fr; }
+  .small-card-grid { grid-template-columns: 1fr; }
+  .thank-you { flex-wrap: wrap; }
   .socials {
     margin-left: 0;
     width: 100%;
@@ -622,30 +573,12 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .topbar > div {
-    align-items: flex-start;
-  }
-
-  .hero {
-    min-height: 420px;
-  }
-
-  .hero h2 {
-    font-size: 57px;
-  }
-
-  .hero-text {
-    font-size: 14px;
-  }
-
-  .category-image {
-    height: 120px;
-  }
-
-  .section-heading {
-    gap: 10px;
-  }
-
+  .topbar > div { align-items: flex-start; }
+  .hero { min-height: 420px; }
+  .hero h2 { font-size: 57px; }
+  .hero-text { font-size: 14px; }
+  .category-image { height: 120px; }
+  .section-heading { gap: 10px; }
   .section-heading h2 {
     font-size: 23px;
     text-align: center;
